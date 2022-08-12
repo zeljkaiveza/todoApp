@@ -101,7 +101,7 @@ main{
     color: white;
 }
 .plusSign{
-    font-size: 35px;
+    font-size: 20px;
 }
 .addLogo{
     width: 20px;
@@ -120,7 +120,7 @@ main{
     color: hsl(236, 17%, 68%);
 }
 .createNewInput{
-    width: 100%;
+    width: 90%;
     border: none;
     font-size: 15px;
     margin-left: 20px;
@@ -150,8 +150,8 @@ main{
     border-bottom: 1px solid hsl(236, 33%, 92%);
 }
 .doneBtn{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border-radius: 100%;
     outline: none;
     border: 2px solid hsl(235, 19%, 35%);
@@ -161,17 +161,17 @@ main{
 }
 .checkedDoneBtn{
     background-image: url(https://cdn-icons-png.flaticon.com/512/7709/7709965.png);
-    background-size: 20px;
+    background-size: 16px;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
 }
 .darkCheckedDoneBtn{
     background-image: url(https://www.downloadclipart.net/large/35564-blue-white-checkmark-clipart.png);
-    background-size: 17px;
+    background-size: 14px;
 }
 .itemText{
-    font-size: 18px;
+    font-size: 15px;
     color: hsl(235, 19%, 35%);
     border: none;
     outline: none;
@@ -211,6 +211,9 @@ main{
         width: 30px;
         height: 30px;
     }
+    .plusSign{
+        font-size: 30px;
+    }
     .moduleContent{
         width: 40%;
         margin-top: 70px;
@@ -224,6 +227,19 @@ main{
     }
     .moduleFooter button{
         font-size: 14px;
+    }
+    .doneBtn{
+        width: 25px;
+        height: 25px;
+    }
+    .itemText{
+        font-size: 18px;
+    }
+    .checkedDoneBtn{
+        background-size: 20px;
+    }
+    .darkCheckedDoneBtn{
+        font-size: 17px;
     }
 
 }

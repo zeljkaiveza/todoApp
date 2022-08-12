@@ -15,10 +15,16 @@ const header = document.querySelector("header")
 const toggleTheme = document.querySelector(".switchThemeLogo")
 let lastClickedFooterBtn;
 let items = []
+let renderedItems = []
 let currentTheme;
-let itemTextHtml = []
 
-
+if(localStorage.theme == null){
+    localStorage.setItem("theme", true)
+}else{
+    if(JSON.parse(localStorage.theme) === false){
+        changeTheme()
+    }
+}
 
 function firstLoad(){
     if (localStorage.items == null){
@@ -206,10 +212,3 @@ input.addEventListener("keyup", (event) =>{
     }
 })
 
-if(localStorage.theme == null){
-    localStorage.setItem("theme", true)
-}else{
-    if(JSON.parse(localStorage.theme) === false){
-        changeTheme()
-    }
-}
